@@ -34,25 +34,26 @@
 
   <!-- Reservation Section -->
   <section id="reservation" class="section light">
-    <div class="container">
-      <h2>Reserve a Table</h2>
-      <form class="reservation-form">
-        <div class="form-row">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-        </div>
-        <div class="form-row">
-          <input type="tel" name="phone" placeholder="Phone Number" required />
-          <input type="number" name="guests" placeholder="Guests" min="1" required />
-        </div>
-        <div class="form-row">
-          <input type="date" name="date" required />
-          <input type="time" name="time" required />
-        </div>
-        <button type="submit">Book Table</button>
-      </form>
-    </div>
-  </section>
+  <div class="container">
+    <h2>Reserve a Table</h2>
+    <form action="thank-you-book.HTML" method="get" class="reservation-form">
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+      </div>
+      <div class="form-row">
+        <input type="tel" name="phone" placeholder="Phone Number" required />
+        <input type="number" name="guests" placeholder="Guests" min="1" required />
+      </div>
+      <div class="form-row">
+        <input type="date" name="date" required />
+        <input type="time" name="time" required />
+      </div>
+      <button type="submit">Book Table</button>
+    </form>
+  </div>
+</section>
+
 
   <!-- About -->
   <section id="about" class="section">
@@ -67,7 +68,7 @@
   <section id="contact" class="section">
     <div class="container">
       <h2>Contact Us</h2>
-      <form class="contact-form">
+      <form class="contact-form" action="thank-you.HTML" method="get">
         <input type="text" placeholder="Your Name" required />
         <input type="email" placeholder="Your Email" required />
         <textarea placeholder="Your Message" rows="5" required></textarea>

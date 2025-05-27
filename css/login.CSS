@@ -6,8 +6,15 @@
 }
 
 body {
- font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   color: #fff;
+}
+
+/* Wrapper for full height */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Background image */
@@ -17,11 +24,10 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  min-height: 100vh;
   position: relative;
 }
 
-/* Overlay for dark effect */
+/* Overlay */
 .background-image::before {
   content: "";
   position: absolute;
@@ -32,14 +38,16 @@ body {
 
 /* Navbar */
 .navbar {
-  background-color: #3a3a3ab6;
-  padding: 10px 0;
+  background-color: rgba(58, 58, 58, 0.72); /* полупрозрачен тъмен фон */
+  padding: 10px 20px;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
 .nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -49,10 +57,10 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: 24px;
   font-weight: bold;
+  color: white;
 }
 
 .logo img {
@@ -71,30 +79,40 @@ body {
   color: white;
   text-decoration: none;
   font-weight: 500;
+  font-size: 16px;
 }
 
 .nav-links a:hover {
   text-decoration: underline;
 }
-/* Login box */
-.login-container {
+
+/* Main content */
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  z-index: 2;
-  background: rgba(255, 255, 255, 0.95);
-  color: #333;
-  padding: 40px 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-  width: 100%;
-  max-width: 400px;
-  text-align: center;
-  margin: 80px auto;
+  z-index: 1;
+  padding: 50px 20px;
 }
 
-/* Form styles */
+/* Login box */
+.login-container {
+  padding-top: 60px; /* отдалечава полето от горната част */
+}
+
+.login-form {
+  max-width: 300px;   /* ширина на формата */
+  margin: 0 auto;     /* хоризонтално центриране */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 .login-container h2 {
   margin-bottom: 25px;
-  color: #000000;
+  color: #000;
 }
 
 .login-form {
@@ -137,24 +155,34 @@ body {
 .small-text a:hover {
   text-decoration: underline;
 }
+
+/* Footer */
 .footer {
-  position: relative;
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(34, 34, 34, 0.8);
+  padding: 15px 0;
+  color: white;
   text-align: center;
-  margin-top: 50px;
+  z-index: 1000;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #222; /* Тъмен фон */
+  padding: 15px 0;
+  text-align: center;
+  z-index: 1000;
 }
 
-.footer {
-  background-color: #222;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-}
 .footer .socials img {
   width: 40px;
   height: 40px;
   object-fit: cover;
   border-radius: 6px;
+  margin: 0 5px;
 }

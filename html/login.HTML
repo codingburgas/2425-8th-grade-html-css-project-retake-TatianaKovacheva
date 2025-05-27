@@ -1,48 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
   <title>Login - Maison Gourmet</title>
-  <link rel="stylesheet" href="../css/login.CSS" />
+  <link rel="stylesheet" href="../css/login.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="../images/mangorino_logo.png">
 </head>
 <body class="background-image">
+  <div class="page-wrapper">
 
-  <!-- Navbar with Logo -->
-  <header class="navbar">
-  <div class="nav-container">
-    <a href="../index.HTML" class="logo">
-      <img src="../images/mangorino_logo.png" alt="Mangorino Logo" />
-    </a>
-    <nav>
-      <ul class="nav-links">
-          <li><a href="daily-menu.html">Daily Menu</a></li>
-          <li><a href="lunch-menu.html">Lunch Menu</a></li>
-          <li><a href="vegan-menu.html">Vegan Menu</a></li>
-          <li><a href="summer-menu.html">Summer Menu</a></li>
-        </ul>
-    </nav>
-  </div>
-</header>
-
-
-  <!-- Login form -->
-  <div class="login-container">
-    <h2>Login</h2>
-    <form class="login-form" action="/login" method="post">
-      <input type="text" name="username" placeholder="Username" required />
-      <input type="password" name="password" placeholder="Password" required />
-      <button type="submit">Login</button>
-    </form>
-    <p class="small-text">Don't have an account? <a href="register.HTML">Register</a></p>
-  </div>
-<footer class="footer">
-    <div class="container footer-content">
-      <div class="socials">
-        <a href="https://www.instagram.com/"><img src="../images/instagram.png" alt="Instagram"></a>
-        <a href="https://www.facebook.com/"><img src="../images/Facebook-logo.png" alt="Facebook"></a>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="../index.html" class="logo">
+          <img src="../images/mangorino_logo.png" alt="Mangorino Logo" />
+        </a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="daily-menu.html">Daily Menu</a></li>
+            <li><a href="lunch-menu.html">Lunch Menu</a></li>
+            <li><a href="vegan-menu.html">Vegan Menu</a></li>
+            <li><a href="summer-menu.html">Summer Menu</a></li>
+          </ul>
+        </nav>
       </div>
-    </div>
-  </footer>
+    </header>
 
+    <!-- Main content -->
+    <main class="main-content">
+      <div class="login-container">
+        <h2>Login</h2>
+        <form class="login-form" action="#" method="post">
+          <input type="text" name="username" placeholder="Username" required />
+          <input type="password" name="password" placeholder="Password" required />
+          <button type="submit">Login</button>
+        </form>
+        <p class="small-text">Don't have an account? <a href="register.html">Register</a></p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="socials">
+          <a href="https://www.instagram.com/"><img src="../images/instagram.png" alt="Instagram"></a>
+          <a href="https://www.facebook.com/"><img src="../images/Facebook-logo.png" alt="Facebook"></a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
 </body>
 </html>

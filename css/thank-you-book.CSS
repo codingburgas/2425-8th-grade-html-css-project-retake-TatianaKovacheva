@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box;/* включва padding и border в ширината и височината */
 }
 
 body {
@@ -11,12 +11,12 @@ body {
 
 .background-image {
   background-image: url('../images/backgraund.jpg');
-  background-size: cover;
+  background-size: cover;/* покрива цялото пространство */
   background-position: center;
   min-height: 100vh;
   position: relative;
 }
-
+/* Полупрозрачен черен слой над фона */
 .background-image::before {
   content: "";
   position: absolute;
@@ -28,15 +28,15 @@ body {
 .navbar {
   background-color: #3a3a3ab6;
   padding: 10px 0;
-  position: sticky;
+  position: sticky;/* остава видима при скролиране */
   top: 0;
   z-index: 1000;
 }
-
+/* Контейнер за съдържанието на навбара */
 .nav-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between;/* лого и меню са отдалечени */
 }
 
 .logo {
@@ -60,7 +60,7 @@ body {
   display: flex;
   gap: 20px;
 }
-
+/* Ефект при минаване с мишката */
 .nav-links a {
   color: white;
   text-decoration: none;
@@ -70,7 +70,7 @@ body {
 .nav-links a:hover {
   text-decoration: underline;
 }
-
+/* благодарствено съобщение */
 .thankyou-section {
   position: relative;
   z-index: 2;
@@ -82,7 +82,7 @@ body {
 }
 
 .thankyou-box {
-  background: rgba(155, 155, 155, 0.95);
+  background: rgba(155, 155, 155, 0.95);/* почти непрозрачен фон */
   color: #000000;
   padding: 40px;
   border-radius: 12px;
@@ -91,7 +91,7 @@ body {
   width: 100%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
-
+/* Бутон за връщане назад */
 .back-button {
   display: inline-block;
   margin-top: 20px;

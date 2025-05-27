@@ -1,4 +1,4 @@
-/* Reset and base styles */
+/* Избира ВСИЧКИ елементи на уеб страницата */
 * {
   margin: 0;
   padding: 0;
@@ -11,26 +11,23 @@ body {
   background-color: #f8f8f8;
   color: #333;
 }
-
-/* Container */
 .container {
   max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
+  margin: auto; /* Центриране хоризонтално */
+  padding: 0 20px; /* Вътрешен отстъп от ляво и дясно */
 }
 
-/* Navbar */
 .navbar {
   background-color: #3a3a3ab6;
   padding: 10px 0;
-  position: sticky;
+  position: sticky;/* Остава фиксирана горе при скрол */
   top: 0;
   z-index: 1000;
 }
 
 .nav-container {
-  display: flex;
-  align-items: center;
+  display: flex;/* Подрежда елементите хоризонтално */
+  align-items: center;/* Вертикално центриране на елементите */
   justify-content: space-between;
 }
 
@@ -47,7 +44,7 @@ body {
 .logo img {
   width: 100px;
   height: 100px;
-  object-fit: contain;
+  object-fit: contain; /* Съобразява се с размера, без да изкривява изображението */
 }
 
 .nav-links {
@@ -66,10 +63,9 @@ body {
   text-decoration: underline;
 }
 
-/* Hero Section */
 .hero {
   background: url('../images/backgraund.jpg') center/cover no-repeat;
-  height: 60vh;
+  height: 60vh;/* Височина 60% от височината на прозореца */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,15 +74,14 @@ body {
 }
 
 .hero-content h1 {
-  font-size: 48px;
+  font-size: 48px;/* Голям размер на заглавието */
   margin-bottom: 10px;
 }
 
 .hero-content p {
-  font-size: 20px;
+  font-size: 20px; /* Размер на параграфа */
 }
 
-/* Section Base */
 .section {
   padding: 60px 20px;
   text-align: center;;
@@ -96,7 +91,6 @@ body {
   background-color: #ffffff;
 }
 
-/* Reservation Form */
 .reservation-form {
   max-width: 700px;
   margin: auto;
@@ -107,12 +101,12 @@ body {
 
 .form-row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Позволява пренасяне на ред */
   gap: 15px;
 }
 
 .form-row input {
-  flex: 1;
+  flex: 1; /* Полетата заемат еднакво място */
   padding: 12px;
   font-size: 16px;
   border: 1px solid #ccc;
@@ -120,7 +114,7 @@ body {
 }
 
 .reservation-form button {
-  align-self: center;
+  align-self: center;/* Центрира бутона хоризонтално */
   background-color: #222;
   color: white;
   padding: 12px 30px;
@@ -131,10 +125,9 @@ body {
 }
 
 .reservation-form button:hover {
-  background-color: #555;
+  background-color: #555; /* Промяна на цвета при задържане */
 }
 
-/* About Section */
 #about p {
   max-width: 700px;
   margin: 20px auto;
@@ -142,7 +135,6 @@ body {
   text-align: center;
 }
 
-/* Menu Section */
 .menu-item {
   background: #f1f1f1;
   padding: 20px;
@@ -150,7 +142,6 @@ body {
   text-align: center;
 }
 
-/* Contact Form */
 .contact-form {
   max-width: 600px;
   margin: auto;
@@ -180,13 +171,13 @@ body {
   background-color: #555;
 }
 
-/* Footer */
 .footer {
   background-color: #222;
   color: white;
   padding: 20px 0;
   text-align: center;
 }
+/* Икони в социалните мрежи в футъра */
 .footer .socials img {
   width: 40px;
   height: 40px;

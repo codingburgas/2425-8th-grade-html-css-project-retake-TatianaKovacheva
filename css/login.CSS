@@ -1,4 +1,4 @@
-/* Reset */
+/* Избира ВСИЧКИ елементи на уеб страницата */
 * {
   margin: 0;
   padding: 0;
@@ -10,14 +10,12 @@ body {
   color: #fff;
 }
 
-/* Wrapper for full height */
 .page-wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-/* Background image */
 .background-image {
   background-image: url('../images/backgraund.jpg');
   background-size: cover;
@@ -27,7 +25,7 @@ body {
   position: relative;
 }
 
-/* Overlay */
+/* черен слой върху фон изображението */
 .background-image::before {
   content: "";
   position: absolute;
@@ -36,7 +34,6 @@ body {
   z-index: 0;
 }
 
-/* Navbar */
 .navbar {
   background-color: rgba(58, 58, 58, 0.72); /* полупрозрачен тъмен фон */
   padding: 10px 20px;
@@ -86,7 +83,6 @@ body {
   text-decoration: underline;
 }
 
-/* Main content */
 .main-content {
   flex: 1;
   display: flex;
@@ -97,17 +93,15 @@ body {
   padding: 50px 20px;
 }
 
-/* Login box */
 .login-container {
-  padding-top: 60px; /* отдалечава полето от горната част */
-}
-
-.login-form {
-  max-width: 300px;   /* ширина на формата */
-  margin: 0 auto;     /* хоризонтално центриране */
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
 }
 
 .login-container h2 {
@@ -127,7 +121,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 6px;
 }
-
+/* Бутон за логин */
 .login-form button {
   background-color: #000000;
   color: white;
@@ -137,7 +131,7 @@ body {
   border-radius: 6px;
   cursor: pointer;
 }
-
+/* Ефект при задържане на бутона */
 .login-form button:hover {
   background-color: #333333;
 }
@@ -151,12 +145,11 @@ body {
   color: #404040;
   text-decoration: none;
 }
-
+/* Ефект при задържане на линка */
 .small-text a:hover {
   text-decoration: underline;
 }
 
-/* Footer */
 .footer {
   position: fixed;
   bottom: 0;
@@ -173,12 +166,12 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #222; /* Тъмен фон */
+  background-color: #222;
   padding: 15px 0;
   text-align: center;
   z-index: 1000;
 }
-
+/* Икони в футъра - размери и заоблени ъгли */
 .footer .socials img {
   width: 40px;
   height: 40px;

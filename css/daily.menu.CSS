@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 80px; /* За да има място за футъра */
+}
+
+.background-image {
+  background-image: url('../images/backgraund.jpg');
+  background-size: cover;/* Покрива целия елемент */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Фонът остава фиксиран при скрол */
+  min-height: 100vh;
+  position: relative;
+  z-index: 0;
+}
+.background-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);/* Полупрозрачен черен */
+  z-index: -1;  /* Зад изображението */
+}
+.navbar {
+  background-color: rgba(58, 58, 58, 0.72);
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+/* Контейнер за лого и меню с максимална ширина и центриране */
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+/* Размери на логото */
+.logo img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+
+/* Меню */
+.menu-section {
+  position: relative;
+  z-index: 1;
+  padding: 60px 20px 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.menu-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.menu-category {
+  margin-bottom: 50px;
+}
+
+.menu-section {
+  position: relative;
+  z-index: 1;
+  padding: 60px 20px 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #fff;
+  flex: 1;
+}
+
+.menu-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.menu-category {
+  margin-bottom: 50px;
+}
+
+.menu-category h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 10px;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.item-box {
+  background-color: rgba(165, 163, 163, 0.363);
+  color: #ffffff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.item-box:hover {
+  transform: scale(1.05);
+}
+
+.item-box img {
+  width: 100%;
+  height: 140px;
+  object-fit: contain;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(34, 34, 34, 0.8);
+  padding: 15px 0;
+  color: white;
+  text-align: center;
+  z-index: 1000;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #222; /* Тъмен фон */
+  padding: 15px 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+.footer .socials img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin: 0 5px;
+}
